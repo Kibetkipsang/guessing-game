@@ -1,40 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guessing Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zalando+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="heading-and-start">
-        <h1 class="heading">Guessing Game</h1>
+      <h1 class="heading">Guessing Game</h1>
+      <div class="commands">
+        <h3 class="help-button">Help</h3>
         <h3 class="start">New Game</h3>
+      </div>
     </div>
     <div class="body-game">
-        <h3 class="guess-numbers">WELCOME TO THEE GUESSING GAME, ENJOY!!</h3>
-        <div class="game-body">
-        <form action="" class="game-form">   
-        <input 
-        type="number" 
-        class="game-input"  
-        placeholder="00" 
-        disabled
-        min="1"
-        max="100"
-        >
-        <button class="guess-button" disabled >Guess</button>
-        </form> 
+      <div class="instructions">
+        <h3 class="instructions-head">How to play</h3>
+        <ul class="instructions-list">
+          <li class="list-content" id="list-content1">
+            Click <strong>New Game</strong> to start a new game.
+          </li>
+          <li class="list-content">Guess a number between 1 and 100.</li>
+          <li class="list-content">You have 10 chances to start a new game.</li>
+          <li class="list-content">
+            After every guess, you'll see if it is too high or too low.
+          </li>
+          <li class="list-content" id="list-content5">
+            Click <strong>New Game</strong> to start again!
+          </li>
+        </ul>
+      </div>
+      <h3 class="guess-numbers">WELCOME TO THEE GUESSING GAME, ENJOY!!</h3>
+      <div class="game-body">
+        <form action="" class="game-form">
+          <input
+            type="number"
+            class="game-input"
+            placeholder="00"
+            disabled
+            min="1"
+            max="100"
+          />
+          <button class="guess-button" disabled>Guess</button>
+        </form>
         <h4 class="guess-result"></h4>
+      </div>
     </div>
-    </div>
-<script src="index.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
